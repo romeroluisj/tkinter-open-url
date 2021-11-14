@@ -13,3 +13,6 @@ git merge dev
 git status
 git pull origin main
 git push origin main
+
+# dev branch: switch back to dev branch
+git checkout dev
