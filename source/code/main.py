@@ -1,10 +1,12 @@
 from source.tk.window import Window
-from source.tk.frame import Frame1
+from source.tk.frame import Frame
+from source.tk.labelframe import LabelFrame
 
 
 def main():
     main_window = Window("Main Window")
-    frame_00 = Frame1(main_window)
+    frame_00 = Frame(main_window)
+    labelframe_00 = LabelFrame(main_window)
     main_window.start()
 
 
