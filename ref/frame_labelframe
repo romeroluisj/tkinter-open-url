@@ -1,4 +1,15 @@
 """
+.config()
+https://stackoverflow.com/questions/42511123/utility-of-config-in-python-tkinter/42511195
+KEYWORD = INITIALIZATION:
+Example, for LabelFrame, either you INITIALIZE text= in super().__init__:
+def __init__(self, window, row=1, column=1, text="lf"):
+        super().__init__(window, text=text)
+or you DON'T INITIALIZE text= in super().__init__, so you do it in .config()
+def __init__(self, window, row=1, column=1, text="lf"):
+        super().__init__(window)
+        self.config(text=text)
+
 Frame
 https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/frame.html
 https://anzeljg.github.io/rin2/book2/2405/docs/tkinter/labelframe.html
