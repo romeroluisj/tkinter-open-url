@@ -8,10 +8,12 @@ def main():
     main_window = Window("Main Window")
 
     frame_00 = Frame(main_window, 0, 0)
-    tk.Label(frame_00, text="test frame").grid(row=3, column=3)
+    tk.Label(frame_00, text="label_00").grid(row=0, column=0)
+    tk.Label(frame_00, text="label_11").grid(row=1, column=1)
 
     labelframe_11 = LabelFrame(main_window, 1, 1, "label")
-    tk.Label(labelframe_11, text="test labelframe").grid(row=3, column=3)
+    tk.Label(labelframe_11, text="label_00").grid(row=0, column=0)
+    tk.Label(labelframe_11, text="label_11").grid(row=1, column=1)
 
     main_window.start()
 
