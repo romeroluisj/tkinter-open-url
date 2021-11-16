@@ -15,6 +15,8 @@ def main():
     tk.Label(labelframe_11, text="label_00").grid(row=0, column=0)
     tk.Label(labelframe_11, text="label_11").grid(row=1, column=1)
 
+    # NEXT STEP: create Label class same as Frame/LabelFrame class
+
     main_window.start()
 
 
