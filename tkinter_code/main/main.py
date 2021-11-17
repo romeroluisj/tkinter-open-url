@@ -1,5 +1,4 @@
-import tkinter
-
+import tkinter as tk
 from tkinter_code.tk.window import Window
 from tkinter_code.tk.frame import Frame
 from tkinter_code.tk.labelframe import LabelFrame
