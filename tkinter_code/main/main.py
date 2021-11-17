@@ -19,7 +19,7 @@ def main():
     Label(labelframe_11, 0, 1)
 
     frame_22 = Frame(main_window, 2, 2)
-    Button(frame_22, 0, 0)
+    Button(frame_22, 0, 0, "any", lambda: print("yay"))
     Button(frame_22, 1, 1)
 
     main_window.start()
