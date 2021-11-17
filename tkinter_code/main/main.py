@@ -14,8 +14,9 @@ def main():
     Label(labelframe_00, 1, 1)
 
     labelframe_11 = LabelFrame(main_window, 1, 1)
-    Label(labelframe_11, 0, 0)
+    Label(labelframe_11, 0, 0, "any")
     Label(labelframe_11, 1, 1)
+    Label(labelframe_11, 0, 1)
 
     frame_22 = Frame(main_window, 2, 2)
     Button(frame_22, 0, 0)
