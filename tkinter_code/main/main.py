@@ -10,11 +10,14 @@ def main():
     main_window_title = "Main Window"
     main_window = Window(main_window_title)
 
-    labelframe_00 = LabelFrame(main_window, 0, 0)
+    # Place labelframe at window grid's row #, column #
+    # Place label(s) at labelframe grid's row #, column #
+
+    labelframe_00 = LabelFrame(main_window, 0, 0, "lf")
     Label(labelframe_00, 0, 0)
     Label(labelframe_00, 1, 1)
 
-    labelframe_11 = LabelFrame(main_window, 1, 1)
+    labelframe_11 = LabelFrame(main_window, 1, 1, "lf")
     Label(labelframe_11, 0, 0, "any")
     Label(labelframe_11, 1, 1)
     Label(labelframe_11, 0, 1)
