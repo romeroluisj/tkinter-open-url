@@ -23,7 +23,7 @@ def main():
     Label(labelframe_11, 0, 1)
 
     # Frames cannot have titles
-    frame_22 = Frame(main_window, 2, 2)
+    frame_22 = Frame(main_window, 2, 2, "raised", 1)
     Button(frame_22, 0, 0, "any", lambda: print("yay"))
     Button(frame_22, 1, 1)
 
