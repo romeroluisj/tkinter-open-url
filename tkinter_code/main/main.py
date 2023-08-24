@@ -7,7 +7,8 @@ from tkinter_code.tk.button import Button
 
 
 def main():
-    main_window = Window("Main Window")
+    main_window_title = "Main Window"
+    main_window = Window(main_window_title)
 
     labelframe_00 = LabelFrame(main_window, 0, 0)
     Label(labelframe_00, 0, 0)
