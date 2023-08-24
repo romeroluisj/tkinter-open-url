@@ -10,7 +10,7 @@ def main():
     main_window_title = "Main Window"
     main_window = Window(main_window_title)
 
-    # Place labelframe at window grid's row #, column #
+    # Labelframes can have titles; place them at window grid's row #, column #
     # Place label(s) at labelframe grid's row #, column #
 
     labelframe_00 = LabelFrame(main_window, 0, 0, "lf")
@@ -22,6 +22,7 @@ def main():
     Label(labelframe_11, 1, 1)
     Label(labelframe_11, 0, 1)
 
+    # Frames cannot have titles
     frame_22 = Frame(main_window, 2, 2)
     Button(frame_22, 0, 0, "any", lambda: print("yay"))
     Button(frame_22, 1, 1)
