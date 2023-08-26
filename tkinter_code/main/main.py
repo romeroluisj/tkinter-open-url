@@ -1,10 +1,10 @@
 import tkinter as tk
+import webbrowser
 from tkinter_code.tk.window import Window
 from tkinter_code.tk.frame import Frame
 from tkinter_code.tk.labelframe import LabelFrame
 from tkinter_code.tk.label import Label
 from tkinter_code.tk.button import Button
-
 
 def main():
     main_window_title = "Main Window"
@@ -26,6 +26,7 @@ def main():
     frame_22 = Frame(main_window, 2, 2, "raised", 1)
     Button(frame_22, 0, 0, "any", lambda: print("yay"))
     Button(frame_22, 1, 1)
+    Button(frame_22, 2, 2, "Open URL", lambda: webbrowser.open('https://chat.openai.com'))
 
     main_window.start()
 
