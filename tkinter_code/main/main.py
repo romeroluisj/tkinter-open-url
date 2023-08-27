@@ -10,23 +10,16 @@ def main():
     main_window_title = "Main Window"
     main_window = Window(main_window_title)
 
+    print_msg = "yay"
     # Labelframes can have titles; place them at window grid's row #, column #
     # Place label(s) at labelframe grid's row #, column #
 
     labelframe_00 = LabelFrame(main_window, 0, 0, "lf")
-    Label(labelframe_00, 0, 0)
-    Label(labelframe_00, 1, 1)
-
-    labelframe_11 = LabelFrame(main_window, 1, 1, "lf")
-    Label(labelframe_11, 0, 0, "any")
-    Label(labelframe_11, 1, 1)
-    Label(labelframe_11, 0, 1)
+    Button(labelframe_00, 0, 0, "Open URL", lambda: webbrowser.open('https://chat.openai.com'))
 
     # Frames cannot have titles
-    frame_22 = Frame(main_window, 2, 2, "raised", 1)
-    Button(frame_22, 0, 0, "any", lambda: print("yay"))
-    Button(frame_22, 1, 1)
-    Button(frame_22, 2, 2, "Open URL", lambda: webbrowser.open('https://chat.openai.com'))
+    frame_10 = Frame(main_window, 1, 0, "raised", 1)
+    Button(frame_10, 0, 0, "any", lambda: print(print_msg))
 
     main_window.start()
 
