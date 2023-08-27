@@ -14,8 +14,8 @@ def main():
     # Labelframes can have titles; place them at window grid's row #, column #
     # Place label(s) at labelframe grid's row #, column #
 
-    labelframe_00 = LabelFrame(main_window, 0, 0, "lf")
-    Button(labelframe_00, 0, 0, "Open URL", lambda: webbrowser.open('https://chat.openai.com'))
+    labelframe_00 = LabelFrame(main_window, 0, 0, "URL buttons")
+    Button(labelframe_00, 0, 0, "ChatGPT", lambda: webbrowser.open('https://chat.openai.com'))
 
     # Frames cannot have titles
     frame_10 = Frame(main_window, 1, 0, "raised", 1)
