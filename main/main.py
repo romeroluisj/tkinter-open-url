@@ -1,13 +1,11 @@
-#!/usr/bin/env python3
-
 import tkinter as tk
 import webbrowser
-from tkinter_code.tk.window import Window
-from tkinter_code.tk.frame import Frame
-from tkinter_code.tk.labelframe import LabelFrame
-from tkinter_code.tk.label import Label
-from tkinter_code.tk.button import Button
-from tkinter_code.web.functions import open_tabs
+from tkinter_open_url.tk.window import Window
+from tkinter_open_url.tk.frame import Frame
+from tkinter_open_url.tk.labelframe import LabelFrame
+from tkinter_open_url.tk.label import Label
+from tkinter_open_url.tk.button import Button
+from tkinter_open_url.web.functions import open_tabs
 
 def main():
     main_window_title = "Main Window"
