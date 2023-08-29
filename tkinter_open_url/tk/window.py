@@ -16,7 +16,7 @@ class Window(tk.Tk):
 
     def build(self):
         labelframe_00 = LabelFrame(self, 0, 0, "URL buttons")
-        Button(labelframe_00, 0, 0, "Default", command=lambda: open_tabs("testing00"))
+        button_00 = Button(labelframe_00, 0, 0, "Default", command=lambda: open_tabs(button_00.cget('text')))
 
     def start(self):
         self.mainloop()

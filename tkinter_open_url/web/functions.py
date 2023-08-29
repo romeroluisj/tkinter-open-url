@@ -10,6 +10,6 @@ def open_tabs(button_name=None):
         'https://www.elcomercio.pe'
     ]
     if button_name is not None:
-        print("testing01")
+        print(button_name)
     for url in urls:
         webbrowser.open_new_tab(url)
