@@ -1,7 +1,7 @@
 import webbrowser
 
 
-def open_tabs():
+def open_tabs(button_name=None):
     urls = [
         'https://chat.openai.com',
         'https://www.inquirer.com',
@@ -9,6 +9,7 @@ def open_tabs():
         'https://www.elpais.com',
         'https://www.elcomercio.pe'
     ]
-    print("testing")
+    if button_name is not None:
+        print("testing01")
     for url in urls:
         webbrowser.open_new_tab(url)
