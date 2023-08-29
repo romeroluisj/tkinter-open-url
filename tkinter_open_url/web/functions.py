@@ -1,5 +1,6 @@
 import webbrowser
 
+
 def open_tabs():
     urls = [
         'https://chat.openai.com',
