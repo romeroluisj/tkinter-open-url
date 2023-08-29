@@ -1,5 +1,3 @@
-import tkinter as tk
-import webbrowser
 from tkinter_open_url.tk.window import Window
 from tkinter_open_url.tk.frame import Frame
 from tkinter_open_url.tk.labelframe import LabelFrame
