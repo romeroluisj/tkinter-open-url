@@ -10,15 +10,10 @@ def main():
     main_window_title = "Main Window"
     main_window = Window(main_window_title)
 
-    print_msg = "yay"
-
     labelframe_00 = LabelFrame(main_window, 0, 0, "URL buttons")
-    #Button(labelframe_00, 0, 0, "ChatGPT", lambda: webbrowser.open(url_chatgpt))
     Button(labelframe_00, 0, 0, "ChatGPT", command=open_tabs)
 
-    frame_10 = Frame(main_window, 1, 0, "raised", 1)
-    Button(frame_10, 0, 0, "any", lambda: print(print_msg))
-
+    main_window.build()
     main_window.start()
 
 

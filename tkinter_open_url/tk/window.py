@@ -12,6 +12,9 @@ class Window(tk.Tk):
         self.attributes("-topmost", True)
         self.after_idle(self.attributes, "-topmost", False)
 
+    def build(self):
+        print(self.title())
+
     def start(self):
         self.mainloop()
 
