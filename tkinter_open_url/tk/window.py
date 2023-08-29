@@ -15,7 +15,6 @@ class Window(tk.Tk):
         self.after_idle(self.attributes, "-topmost", False)
 
     def build(self):
-        print(self.title())
         labelframe_00 = LabelFrame(self, 0, 0, "URL buttons")
         Button(labelframe_00, 0, 0, "ChatGPT", command=open_tabs)
 
