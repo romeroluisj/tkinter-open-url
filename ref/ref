@@ -16,3 +16,7 @@ class Window:
     def start(self):
         self.window.mainloop()
 """
+
+In tkinter button, command vs lambda (from ChatGPT):
+Use command to specify a no-argument function to be executed when a button is clicked.
+Use lambda when you need to pass arguments to the function that will be executed when the button is clicked.
