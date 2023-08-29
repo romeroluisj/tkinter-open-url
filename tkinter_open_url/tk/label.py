@@ -3,6 +3,8 @@ import tkinter as tk
 
 class Label(tk.Label):
 
+    # Place label(s) at labelframe grid's row #, column #
+
     def __init__(self, frame, row=0, column=0, text=None, relief=None, bd=None):
         super().__init__(frame, text=text, relief=relief, bd=bd)
         if text is None:

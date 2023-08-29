@@ -3,6 +3,7 @@ import tkinter as tk
 
 class Frame(tk.Frame):
 
+    # Frames cannot have titles
     # bd = shorthand for borderwidth; need bd > 0 for visible border
     # relief = flat (default), raised, sunken, groove, ridge
 

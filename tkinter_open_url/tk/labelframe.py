@@ -3,6 +3,8 @@ import tkinter as tk
 
 class LabelFrame(tk.LabelFrame):
 
+    # Labelframes can have titles; place them at window grid's row #, column #
+
     def __init__(self, window, row=1, column=1, text=None, relief=None, bd=None):
         super().__init__(window, text=text, relief=relief, bd=bd)
         if text == "lf":
