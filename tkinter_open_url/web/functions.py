@@ -9,5 +9,6 @@ def open_tabs():
         'https://www.elpais.com',
         'https://www.elcomercio.pe'
     ]
+    print("testing")
     for url in urls:
         webbrowser.open_new_tab(url)

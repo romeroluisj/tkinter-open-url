@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter_open_url.tk.button import Button
 from tkinter_open_url.tk.labelframe import LabelFrame
-from tkinter_open_url.web.functions import open_tabs
+from tkinter_open_url.web.functions import *
 
 
 class Window(tk.Tk):
@@ -16,7 +16,7 @@ class Window(tk.Tk):
 
     def build(self):
         labelframe_00 = LabelFrame(self, 0, 0, "URL buttons")
-        Button(labelframe_00, 0, 0, "ChatGPT", command=open_tabs)
+        Button(labelframe_00, 0, 0, "Default", command=open_tabs)
 
     def start(self):
         self.mainloop()
