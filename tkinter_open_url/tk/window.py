@@ -1,7 +1,7 @@
 import tkinter as tk
 from tkinter_open_url.tk.button import Button
 from tkinter_open_url.tk.labelframe import LabelFrame
-from tkinter_open_url.web.functions import *
+from tkinter_open_url.web.web_functions import *
 
 
 class Window(tk.Tk):
