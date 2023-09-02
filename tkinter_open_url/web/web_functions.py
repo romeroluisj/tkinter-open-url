@@ -14,16 +14,15 @@ def get_url_list(button_name=None):
     print("Current Working Directory:", os.getcwd())  # For debugging
 
     filename = "url_list.txt"
-    filename_lines = file_readlines(filename)
+    lines = read_lines(filename)
 
-    for line in filename_lines:
+    for line in lines:
         line = line.strip()  # remove trailing whitespace, newline
         key, value_str = line.split(":", 1)
 
         if key == button_name:
             # Convert string representation of list to actual list
             url_list = ast.literal_eval(value_str)
-            print("This is the url_list:")
             return url_list
 
     # If for-loop finishes, and button_name is not found in keys
@@ -31,12 +30,13 @@ def get_url_list(button_name=None):
     return None
 
 
-def file_readlines(filename):
-    lines = None
+def read_lines(filename):
     try:
         with open(filename, 'r') as f:
             lines = f.readlines()
+
     except FileNotFoundError:
         print("except FileNotFoundError")
         return f"{filename} not found in current directory"
+
     return lines
