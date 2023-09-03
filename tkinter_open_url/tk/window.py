@@ -18,6 +18,8 @@ class Window(tk.Tk):
         labelframe_00 = LabelFrame(self, 0, 0, "URL buttons")
         button_00 = Button(labelframe_00, 0, 0, "Default",
                            command=lambda: open_tabs(button_00.cget('text')))
+        button_10 = Button(labelframe_00, 1, 0, "English",
+                           command=lambda: open_tabs(button_10.cget('text')))
 
     def start(self):
         self.mainloop()
