@@ -29,6 +29,8 @@ class Window(tk.Tk):
                            command=lambda: open_tabs(button_10.cget('text')))
         button_20 = Button(labelframe_10, 2, 0, "Español",
                            command=lambda: open_tabs(button_20.cget('text')))
+        button_30 = Button(labelframe_10, 3, 0, "Français",
+                           command=lambda: open_tabs(button_30.cget('text')))
 
     def start(self):
         self.mainloop()
