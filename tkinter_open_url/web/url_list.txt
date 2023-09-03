@@ -1,3 +1,3 @@
 Default:['https://chat.openai.com','https://weather.com']
-English:['https://billypenn.com','https://www.inquirer.com','https://www.nytimes.com']
+English:['https://billypenn.com','https://www.inquirer.com','https://www.nytimes.com','https://www.economist.com']
 Español:['https://www.elpais.com','https://www.elcomercio.pe']
