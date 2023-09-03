@@ -13,7 +13,7 @@ def open_tabs(button_name=None):
 def get_url_list(button_name=None):
     print("Current Working Directory:", os.getcwd())  # For debugging
 
-    filename = "url_list.txt"
+    filename = "tkinter_open_url/web/url_list.txt"
     lines = read_lines(filename)
 
     for line in lines:
