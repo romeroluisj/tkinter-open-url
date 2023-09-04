@@ -22,7 +22,7 @@ class Window(tk.Tk):
 
         # Other sections
         self.build_language_section()
-        self.build_bank_section()
+        self.build_financial_section()
 
     def build_language_section(self):
         labelframe_10 = LabelFrame(self, 1, 0, "Languages")
@@ -33,9 +33,9 @@ class Window(tk.Tk):
         button_30 = Button(labelframe_10, 3, 0, "Français",
                            command=lambda: open_tabs(button_30.cget('text')))
 
-    def build_bank_section(self):
-        labelframe_20 = LabelFrame(self, 2, 0, "Banks")
-        button_10 = Button(labelframe_20, 1, 0, "Banks",
+    def build_financial_section(self):
+        labelframe_20 = LabelFrame(self, 2, 0, "Financial")
+        button_10 = Button(labelframe_20, 1, 0, "Accounts",
                            command=lambda: open_tabs(button_10.cget('text')))
 
     def start(self):
