@@ -23,6 +23,7 @@ class Window(tk.Tk):
         # Other sections
         self.build_language_section()
         self.build_financial_section()
+        self.build_youtube_section()
 
     def build_language_section(self):
         labelframe_10 = LabelFrame(self, 1, 0, "Languages")
@@ -37,6 +38,13 @@ class Window(tk.Tk):
         labelframe_20 = LabelFrame(self, 2, 0, "Financial")
         button_10 = Button(labelframe_20, 1, 0, "Accounts",
                            command=lambda: open_tabs(button_10.cget('text')))
+
+    def build_youtube_section(self):
+        labelframe_30 = LabelFrame(self, 3, 0, "YouTube")
+        button_10 = Button(labelframe_30, 1, 0, "Lisa",
+                           command=lambda: open_tabs(button_10.cget('text')))
+        button_20 = Button(labelframe_30, 2, 0, "War",
+                           command=lambda: open_tabs(button_20.cget('text')))
 
     def start(self):
         self.mainloop()
