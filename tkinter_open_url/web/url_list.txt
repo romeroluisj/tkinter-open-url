@@ -1,5 +1,6 @@
 Accounts:['https://www.bankofamerica.com','https://www.chase.com','https://www.citi.com','https://onlinebanking.tdbank.com','https://www.fidelity.com']
 Default:['https://chat.openai.com','https://weather.com']
+Deutsch:['https://chat.openai.com','https://www.wordreference.com/deen/','https://www.dw.com/de/themen/s-9077','https://www.ardmediathek.de/video/filme/krueger-aus-almanya/hr-fernsehen/Y3JpZDovL2hyLW9ubGluZS8xOTgxOTU']
 English:['https://billypenn.com','https://www.inquirer.com','https://www.nytimes.com','https://www.economist.com']
 Español:['https://www.elcomercio.pe','https://www.bbc.com/mundo','https://elpais.com/planeta-futuro/','https://www.lanacion.com.ar']
 Français:['https://www.lemonde.fr','https://www.lesinrocks.com']
