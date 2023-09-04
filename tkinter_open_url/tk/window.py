@@ -16,14 +16,17 @@ class Window(tk.Tk):
 
     def build(self):
         # Default section
-        labelframe_00 = LabelFrame(self, 0, 0, "Default")
-        button_00 = Button(labelframe_00, 0, 0, "Default",
-                           command=lambda: open_tabs(button_00.cget('text')))
+        self.build_default_section()
 
         # Other sections
         self.build_language_section()
         self.build_financial_section()
         self.build_youtube_section()
+
+    def build_default_section(self):
+        labelframe_00 = LabelFrame(self, 0, 0, "Default")
+        button_00 = Button(labelframe_00, 0, 0, "Default",
+                           command=lambda: open_tabs(button_00.cget('text')))
 
     def build_language_section(self):
         labelframe_10 = LabelFrame(self, 1, 0, "Languages")
