@@ -30,24 +30,24 @@ class Window(tk.Tk):
 
     def build_language_section(self):
         labelframe_10 = LabelFrame(self, 1, 0, "Languages")
-        button_10 = Button(labelframe_10, 1, 0, "English",
+        button_00 = Button(labelframe_10, 0, 0, "English",
+                           command=lambda: open_tabs(button_00.cget('text')))
+        button_10 = Button(labelframe_10, 1, 0, "Español",
                            command=lambda: open_tabs(button_10.cget('text')))
-        button_20 = Button(labelframe_10, 2, 0, "Español",
+        button_20 = Button(labelframe_10, 2, 0, "Français",
                            command=lambda: open_tabs(button_20.cget('text')))
-        button_30 = Button(labelframe_10, 3, 0, "Français",
-                           command=lambda: open_tabs(button_30.cget('text')))
 
     def build_financial_section(self):
         labelframe_20 = LabelFrame(self, 2, 0, "Financial")
-        button_10 = Button(labelframe_20, 1, 0, "Accounts",
-                           command=lambda: open_tabs(button_10.cget('text')))
+        button_00 = Button(labelframe_20, 0, 0, "Accounts",
+                           command=lambda: open_tabs(button_00.cget('text')))
 
     def build_youtube_section(self):
         labelframe_30 = LabelFrame(self, 3, 0, "YouTube")
-        button_10 = Button(labelframe_30, 1, 0, "Lisa",
+        button_00 = Button(labelframe_30, 0, 0, "Lisa",
+                           command=lambda: open_tabs(button_00.cget('text')))
+        button_10 = Button(labelframe_30, 1, 0, "War",
                            command=lambda: open_tabs(button_10.cget('text')))
-        button_20 = Button(labelframe_30, 2, 0, "War",
-                           command=lambda: open_tabs(button_20.cget('text')))
 
     def start(self):
         self.mainloop()
