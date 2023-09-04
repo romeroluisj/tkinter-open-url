@@ -21,9 +21,9 @@ class Window(tk.Tk):
                            command=lambda: open_tabs(button_00.cget('text')))
 
         # Other sections
-        self.build_language_buttons()
+        self.build_language_section()
 
-    def build_language_buttons(self):
+    def build_language_section(self):
         labelframe_10 = LabelFrame(self, 1, 0, "Languages")
         button_10 = Button(labelframe_10, 1, 0, "English",
                            command=lambda: open_tabs(button_10.cget('text')))
