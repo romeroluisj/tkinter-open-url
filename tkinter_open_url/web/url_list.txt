@@ -1,3 +1,4 @@
+Banks:['https://www.bankofamerica.com','https://www.chase.com','https://www.citi.com','https://onlinebanking.tdbank.com']
 Default:['https://chat.openai.com','https://weather.com']
 English:['https://billypenn.com','https://www.inquirer.com','https://www.nytimes.com','https://www.economist.com']
 Español:['https://www.elcomercio.pe','https://www.bbc.com/mundo','https://elpais.com/planeta-futuro/','https://www.lanacion.com.ar']
