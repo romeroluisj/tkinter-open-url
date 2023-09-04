@@ -1,4 +1,4 @@
 Default:['https://chat.openai.com','https://weather.com']
 English:['https://billypenn.com','https://www.inquirer.com','https://www.nytimes.com','https://www.economist.com']
-Español:['https://www.elcomercio.pe','https://elpais.com/planeta-futuro/','https://www.lanacion.com.ar']
+Español:['https://www.elcomercio.pe','https://www.bbc.com/mundo','https://elpais.com/planeta-futuro/','https://www.lanacion.com.ar']
 Français:['https://www.lemonde.fr','https://www.lesinrocks.com']
