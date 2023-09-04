@@ -41,6 +41,8 @@ class Window(tk.Tk):
         labelframe_20 = LabelFrame(self, 2, 0, "Financial")
         button_00 = Button(labelframe_20, 0, 0, "Accounts",
                            command=lambda: open_tabs(button_00.cget('text')))
+        button_10 = Button(labelframe_20, 1, 0, "Invest",
+                           command=lambda: open_tabs(button_10.cget('text')))
 
     def build_youtube_section(self):
         labelframe_30 = LabelFrame(self, 3, 0, "YouTube")
