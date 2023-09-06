@@ -38,6 +38,8 @@ class Window(tk.Tk):
                            command=lambda: open_tabs(button_20.cget('text')))
         button_30 = Button(labelframe_10, 3, 0, "Deutsch",
                            command=lambda: open_tabs(button_30.cget('text')))
+        button_40 = Button(labelframe_10, 4, 0, "Italiano",
+                           command=lambda: open_tabs(button_40.cget('text')))
 
     def build_financial_section(self):
         labelframe_20 = LabelFrame(self, 2, 0, "Financial")
