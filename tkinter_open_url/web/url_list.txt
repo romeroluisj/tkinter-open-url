@@ -5,5 +5,6 @@ English:['https://billypenn.com','https://www.inquirer.com','https://www.nytimes
 Español:['https://www.elcomercio.pe','https://www.bbc.com/mundo','https://elpais.com/planeta-futuro/','https://www.lanacion.com.ar']
 Français:['https://www.lemonde.fr','https://www.lesinrocks.com']
 Invest:['https://stockcharts.com/h-sc/ui','https://www.fidelity.com','https://www.nasdaq.com/market-activity/stocks/aapl/dividend-history','https://www.google.com/search?q=Warren+Buffett&tbm=nws','https://www.google.com/search?q=Berkshire+Hathaway&tbm=nws']
+Italiano:['https://www.focus.it','https://www.ansa.it','https://www.corriere.it']
 Lisa:['https://youtu.be/0QfCvIJRtE0?si=m3DmCx5UXTqe8ghL']
 War:['https://www.youtube.com/watch?v=cgS8IOBBENg&list=PLAmG2CHRWaFL3MJekEE8TwcWbtv9LSCHU']
