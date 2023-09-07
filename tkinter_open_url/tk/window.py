@@ -30,16 +30,18 @@ class Window(tk.Tk):
 
     def build_language_section(self):
         labelframe_10 = LabelFrame(self, 1, 0, "Languages")
-        button_00 = Button(labelframe_10, 0, 0, "English",
-                           command=lambda: open_tabs(button_00.cget('text')))
-        button_10 = Button(labelframe_10, 1, 0, "Español",
+        button_00 = Button(labelframe_10, 0, 0, "Aid",
+                           command=lambda: open_tabs('Language_aid'))
+        button_10 = Button(labelframe_10, 1, 0, "English",
                            command=lambda: open_tabs(button_10.cget('text')))
-        button_20 = Button(labelframe_10, 2, 0, "Français",
+        button_20 = Button(labelframe_10, 2, 0, "Español",
                            command=lambda: open_tabs(button_20.cget('text')))
-        button_30 = Button(labelframe_10, 3, 0, "Deutsch",
+        button_30 = Button(labelframe_10, 3, 0, "Français",
                            command=lambda: open_tabs(button_30.cget('text')))
-        button_40 = Button(labelframe_10, 4, 0, "Italiano",
+        button_40 = Button(labelframe_10, 4, 0, "Deutsch",
                            command=lambda: open_tabs(button_40.cget('text')))
+        button_50 = Button(labelframe_10, 5, 0, "Italiano",
+                           command=lambda: open_tabs(button_50.cget('text')))
 
     def build_financial_section(self):
         labelframe_20 = LabelFrame(self, 2, 0, "Financial")
