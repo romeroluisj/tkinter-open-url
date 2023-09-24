@@ -10,3 +10,4 @@ Italiano:['https://chat.openai.com','https://www.wordreference.com/ites','https:
 Language_aid:['https://chat.openai.com','https://www.wordreference.com/esen']
 Lisa:['https://youtu.be/0QfCvIJRtE0?si=m3DmCx5UXTqe8ghL']
 War:['https://www.youtube.com/watch?v=cgS8IOBBENg&list=PLAmG2CHRWaFL3MJekEE8TwcWbtv9LSCHU']
+test
