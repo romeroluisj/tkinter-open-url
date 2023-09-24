@@ -1,4 +1,5 @@
 Accounts:['https://www.bankofamerica.com','https://www.chase.com','https://www.citi.com','https://onlinebanking.tdbank.com','https://www.fidelity.com']
+Bachata:['https://youtu.be/iC1oIc9Zp-0?si=lzR3ZNA8msOcaNS9']
 Default:['https://chat.openai.com','https://weather.com','https://mail.google.com/mail/u/0/#inbox','https://bilderbergmeetings.org']
 Deutsch:['https://chat.openai.com','https://www.wordreference.com/deen/','https://deutsch.lingolia.com/en/grammar/conjugator','https://www.dw.com/de/themen/s-9077','https://youtu.be/IZyCxf8qnPU?si=MqTVxFNCPuAn9YY-']
 English:['https://billypenn.com','https://www.inquirer.com','https://www.nytimes.com','https://www.economist.com']
