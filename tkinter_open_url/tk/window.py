@@ -52,12 +52,8 @@ class Window(tk.Tk):
 
     def build_youtube_section(self):
         labelframe_30 = LabelFrame(self, 3, 0, "YouTube")
-        button_00 = Button(labelframe_30, 0, 0, "Lisa",
+        button_00 = Button(labelframe_30, 0, 0, "YouTube",
                            command=lambda: open_tabs(button_00.cget('text')))
-        button_10 = Button(labelframe_30, 1, 0, "War",
-                           command=lambda: open_tabs(button_10.cget('text')))
-        button_20 = Button(labelframe_30, 2, 0, "Bachata_TEST",
-                           command=lambda: open_tabs(button_20.cget('text')))
 
     def start(self):
         self.mainloop()
