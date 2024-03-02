@@ -50,7 +50,6 @@ class Window(tk.Tk):
         button_00 = Button(lf, 0, 0, "YouTube",
                            command=lambda: open_tabs(button_00.cget('text')))
 
-
     def build_language_section(self):
         row, col = 4, 0
         lf = LabelFrame(self, row, col, "Languages")
