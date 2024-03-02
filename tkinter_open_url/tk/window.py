@@ -28,6 +28,11 @@ class Window(tk.Tk):
         button_00 = Button(labelframe_00, 0, 0, "Default",
                            command=lambda: open_tabs(button_00.cget('text')))
 
+    def build_code_section(self):
+        labelframe_00 = LabelFrame(self, 0, 0, "Code")
+        button_00 = Button(labelframe_00, 0, 0, "Code",
+                           command=lambda: open_tabs(button_00.cget('text')))
+
     def build_language_section(self):
         labelframe_10 = LabelFrame(self, 1, 0, "Languages")
         button_00 = Button(labelframe_10, 0, 0, "Aid",
