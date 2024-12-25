@@ -54,7 +54,7 @@ class Window(tk.Tk):
         row, col = 4, 0
         lf = LabelFrame(self, row, col, "Languages")
         button_00 = Button(lf, 0, 0, "Aid",
-                           command=lambda: open_tabs('Language_aid'))
+                           command=lambda: open_tabs(button_00.cget('text')))
         button_10 = Button(lf, 1, 0, "English",
                            command=lambda: open_tabs(button_10.cget('text')))
         button_20 = Button(lf, 2, 0, "Español",
