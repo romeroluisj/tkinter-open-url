@@ -7,7 +7,6 @@ Español:['https://www.elcomercio.pe','https://www.bbc.com/mundo','https://elpai
 Français:['https://chat.openai.com','https://www.wordreference.com/fres','https://www.lemonde.fr','https://www.lesinrocks.com','https://www.bbc.com/afrique']
 Invest:['https://stockcharts.com/h-sc/ui','https://www.fidelity.com','https://www.nasdaq.com/market-activity/stocks/aapl/dividend-history','https://www.google.com/search?q=Warren+Buffett&tbm=nws','https://www.google.com/search?q=Berkshire+Hathaway&tbm=nws','https://www.dataroma.com/m/holdings.php?m=BRK','https://investor.vanguard.com/investment-products/mutual-funds/profile/vfiax']
 Italiano:['https://chat.openai.com','https://www.wordreference.com/ites','https://www.focus.it','https://www.ansa.it','https://www.corriere.it']
-Language_aid:['https://chat.openai.com','https://www.wordreference.com/esen']
 Português:['https://www.folha.uol.com.br']
 Ukrainian:['https://zn.ua']
 YouTube:['https://www.youtube.com']
