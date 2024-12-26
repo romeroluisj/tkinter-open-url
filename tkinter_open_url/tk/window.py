@@ -52,22 +52,22 @@ class Window(tk.Tk):
 
     def build_language_section(self):
         row, col = 4, 0
-        lf = LabelFrame(self, row, col, "Languages")
-        button_00 = Button(lf, 0, 0, "Deutsch",
+        lf = LabelFrame(self, row, col, 'Languages')
+        button_00 = Button(lf, 0, 0, 'Deutsch',
                            command=lambda: open_tabs(button_00.cget('text')))
-        button_10 = Button(lf, 1, 0, "Ukrainian",
+        button_10 = Button(lf, 1, 0, 'Українська',
                            command=lambda: open_tabs(button_10.cget('text')))
-        button_20 = Button(lf, 2, 0, "Russian",
+        button_20 = Button(lf, 2, 0, 'Русский',
                            command=lambda: open_tabs(button_20.cget('text')))
-        button_30 = Button(lf, 3, 0, "Français",
+        button_30 = Button(lf, 3, 0, 'Français',
                            command=lambda: open_tabs(button_30.cget('text')))
-        button_40 = Button(lf, 4, 0, "Italiano",
+        button_40 = Button(lf, 4, 0, 'Italiano',
                            command=lambda: open_tabs(button_40.cget('text')))
-        button_50 = Button(lf, 5, 0, "Português",
+        button_50 = Button(lf, 5, 0, 'Português',
                            command=lambda: open_tabs(button_50.cget('text')))
-        button_60 = Button(lf, 6, 0, "English",
+        button_60 = Button(lf, 6, 0, 'English',
                            command=lambda: open_tabs(button_60.cget('text')))
-        button_70 = Button(lf, 7, 0, "Español",
+        button_70 = Button(lf, 7, 0, 'Español',
                            command=lambda: open_tabs(button_70.cget('text')))
 
     def start(self):
