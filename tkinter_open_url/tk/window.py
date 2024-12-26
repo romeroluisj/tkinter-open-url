@@ -59,12 +59,18 @@ class Window(tk.Tk):
                            command=lambda: open_tabs(button_10.cget('text')))
         button_20 = Button(lf, 2, 0, "Español",
                            command=lambda: open_tabs(button_20.cget('text')))
-        button_30 = Button(lf, 3, 0, "Français",
+        button_30 = Button(lf, 3, 0, "Deutsch",
                            command=lambda: open_tabs(button_30.cget('text')))
-        button_40 = Button(lf, 4, 0, "Deutsch",
+        button_40 = Button(lf, 4, 0, "Français",
                            command=lambda: open_tabs(button_40.cget('text')))
         button_50 = Button(lf, 5, 0, "Italiano",
                            command=lambda: open_tabs(button_50.cget('text')))
+        button_60 = Button(lf, 6, 0, "Français",
+                           command=lambda: open_tabs(button_60.cget('text')))
+        button_70 = Button(lf, 7, 0, "Italiano",
+                           command=lambda: open_tabs(button_70.cget('text')))
+        button_80 = Button(lf, 7, 0, "Português",
+                           command=lambda: open_tabs(button_80.cget('text')))
 
     def start(self):
         self.mainloop()
