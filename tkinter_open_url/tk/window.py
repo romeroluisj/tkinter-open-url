@@ -65,9 +65,9 @@ class Window(tk.Tk):
                            command=lambda: open_tabs(button_40.cget('text')))
         button_50 = Button(lf, 5, 0, 'Português',
                            command=lambda: open_tabs(button_50.cget('text')))
-        button_60 = Button(lf, 6, 0, 'English',
+        button_60 = Button(lf, 6, 0, 'Español',
                            command=lambda: open_tabs(button_60.cget('text')))
-        button_70 = Button(lf, 7, 0, 'Español',
+        button_70 = Button(lf, 7, 0, 'English',
                            command=lambda: open_tabs(button_70.cget('text')))
 
     def start(self):
