@@ -37,8 +37,10 @@ class Window(tk.Tk):
                            command=lambda: open_tabs(button_00.cget('text')))
         button_01 = Button(lf, 0, 1, "Courses",
                            command=lambda: open_tabs(button_01.cget('text')))
-        button_10 = Button(lf, 1, 0, "Azure",
+        button_10 = Button(lf, 1, 0, "AI Chatbots",
                            command=lambda: open_tabs(button_10.cget('text')))
+        button_11 = Button(lf, 1, 1, "Azure",
+                           command=lambda: open_tabs(button_11.cget('text')))
 
     def build_financial_section(self):
         row, col = 2, 0
