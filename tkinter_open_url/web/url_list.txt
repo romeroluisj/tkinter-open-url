@@ -1,5 +1,5 @@
 Accounts:['https://www.bankofamerica.com','https://www.chase.com','https://www.citi.com','https://onlinebanking.tdbank.com','https://www.fidelity.com']
-AI Chatbots:['https://chat.openai.com','https://gemini.google.com/app','https://www.perplexity.ai','https://claude.ai/new']
+AI Chatbots:['https://chat.openai.com','https://www.perplexity.ai','https://gemini.google.com/app','https://claude.ai/new']
 Azure:['https://youtu.be/5abffC-K40c?si=uIgNO8Tg0WPhtt3a&t=1464','https://learn.microsoft.com/en-us/training/courses/az-900t00#course-syllabus']
 Code:['https://github.com']
 Courses:['https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python']
