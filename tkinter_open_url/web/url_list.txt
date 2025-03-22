@@ -9,7 +9,7 @@ English:['https://www.pbs.org','https://billypenn.com','https://www.inquirer.com
 Español:['https://www.youtube.com/@lamarch','https://www.youtube.com/@BBCMundo','https://www.elcomercio.pe','https://www.bbc.com/mundo','https://www.jornada.com.mx','https://elpais.com/?ed=es','https://www.lanacion.com.ar','https://www.wordreference.com/esen/']
 Français:['https://www.youtube.com/@arte','https://www.lemonde.fr/?preferred_lang=fr','https://www.lesinrocks.com','https://www.bbc.com/afrique','https://www.wordreference.com/fres']
 Invest:['https://stockcharts.com/h-sc/ui','https://www.fidelity.com','https://www.nasdaq.com/market-activity/stocks/aapl/dividend-history','https://www.google.com/search?q=Warren+Buffett&tbm=nws','https://www.google.com/search?q=Berkshire+Hathaway&tbm=nws','https://www.dataroma.com/m/holdings.php?m=BRK','https://investor.vanguard.com/investment-products/mutual-funds/profile/vfiax']
-Italiano:['https://www.raiplay.it/programmi/sapiens-unsolopianeta','https://www.focus.it','https://www.ansa.it','https://www.corriere.it','https://www.wordreference.com/ites','https://it.pons.com/traduzione']
+Italiano:['https://www.raiplay.it/programmi/sapiens-unsolopianeta','https://www.focus.it','https://www.ansa.it','https://www.corriere.it','https://www.wordreference.com/ites','https://it.pons.com/traduzione/italiano-francese']
 Português:['https://www.youtube.com/@platitudespodcast','https://www.folha.uol.com.br','https://www.rtp.pt/noticias/','https://www.wordreference.com/ptes/']
 Русский:['https://www.bbc.com/russian']
 Українська:['https://youtu.be/4qTKgp3b81o?si=NAdQXW8AmS3M3RA6','https://youtu.be/PvdI93hI1Vc?si=-wXTkkcBpm3GRpdL','https://www.bbc.com/ukrainian','https://zn.ua']
