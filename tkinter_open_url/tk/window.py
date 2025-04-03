@@ -29,6 +29,8 @@ class Window(tk.Tk):
         lf = LabelFrame(self, row, col, "Default")
         button_00 = Button(lf, 0, 0, "Default",
                            command=lambda: open_tabs(button_00.cget('text')))
+        button_01 = Button(lf, 0, 1, "Test",
+                           command=lambda: open_tabs(button_01.cget('text')))
 
     def build_code_section(self):
         row, col = 1, 0

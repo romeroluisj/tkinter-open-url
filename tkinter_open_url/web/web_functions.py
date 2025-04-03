@@ -1,9 +1,25 @@
 import ast
 import os
 import webbrowser
+import platform
+import subprocess
+
+
+def open_file_explorer():
+    system = platform.system()
+    if system == "Darwin":  # macOS
+        subprocess.run(["open", "."])
+    elif system == "Windows":
+        subprocess.run(["explorer", "."])
+    else:  # Linux and others
+        subprocess.run(["xdg-open", "."])
 
 
 def open_tabs(button_name=None):
+    if button_name == "Test":
+        open_file_explorer()
+        return
+    
     urls = get_url_list(button_name)
     for url in urls:
         webbrowser.open_new_tab(url)
