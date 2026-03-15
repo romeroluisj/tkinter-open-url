@@ -1,7 +1,7 @@
 # Windsurf AI Assistant Project Rules
 
 ## Overview
-These rules guide how the Windsurf AI assistant should behave when working on this tkinter-open-url project.
+These rules guide how the Windsurf AI assistant should behave when working on this zen-panel project.
 
 ### 🔄 Project Awareness & Context
 - **Always read `PLANNING.md`** at the start of a new conversation to understand the project's architecture, goals, style, and constraints.

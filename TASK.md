@@ -1,4 +1,4 @@
-# TASK.md - tkinter-open-url Project
+# TASK.md - zen-panel Project
 
 ## Current Active Tasks
 

@@ -12,8 +12,8 @@ A Python application built with Tkinter for opening URLs in a user-friendly inte
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/tkinter-open-url.git
-cd tkinter-open-url
+git clone https://github.com/romeroluisj/zen-panel.git
+cd zen-panel
 ```
 
 2. Install the package:

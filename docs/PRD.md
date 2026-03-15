@@ -3,7 +3,7 @@
 ## 1. Product overview
 
 ### 1.1 Purpose
-`tkinter-open-url` is a lightweight desktop launcher built with Tkinter. It provides a simple GUI for opening groups of URLs (defined in a text file) and includes a macOS Dock cleanup feature (“Zen Dock”) that quits and removes non-essential Dock apps based on a keep list.
+`zen-panel` is a lightweight desktop launcher built with Tkinter. It provides a simple GUI for opening groups of URLs (defined in a text file) and includes a macOS Dock cleanup feature (“Zen Dock”) that quits and removes non-essential Dock apps based on a keep list.
 
 ### 1.2 Primary users
 - A single user (you) who wants fast access to commonly used webpages and a one-click way to reduce Dock clutter.
