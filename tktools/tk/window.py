@@ -38,7 +38,7 @@ class Window(tk.Tk):
     def build_system_section(self):
         row, col = 0, 1  # To the right of Default section
         lf = LabelFrame(self, row, col, "System")
-        button_00 = Button(lf, 0, 0, "Prune Dock",
+        button_00 = Button(lf, 0, 0, "Zen Dock",
                            command=lambda: prune_dock())
 
     def build_code_section(self):
