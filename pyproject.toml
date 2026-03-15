@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zen-panel"
+version = "0.1.0"
+description = "A macOS desktop launcher for URL groups and Dock management."
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "MIT"}
+authors = [
+    {name = "Luis Romero"}
+]
+dependencies = [
+    "pillow>=10.0.0",
+    "ttkthemes>=3.2.2",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/romeroluisj/zen-panel"
+
+[tool.setuptools.packages.find]
+where = ["."]
