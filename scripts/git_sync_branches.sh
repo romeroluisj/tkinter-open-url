@@ -1,5 +1,5 @@
 #!/bin/bash
-set -e  # Exit on any error
+set -euo pipefail
 
 # Update remote refs
 git fetch --all
@@ -16,14 +16,11 @@ git status
 git pull origin dev
 git push origin dev
 
-# merge dev branch into main branch
+# main branch: sync with remote, merge dev, then push
 git checkout main
 git status
-git merge --ff-only dev
-
-# main branch: push local to remote
-git status
 git pull origin main
+git merge --ff-only dev
 git push origin main
 
 # dev branch: switch back to dev branch
