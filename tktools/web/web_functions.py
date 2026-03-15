@@ -4,16 +4,9 @@ import webbrowser
 import platform
 import subprocess
 from pathlib import Path
+from tktools.system.system_functions import open_file_explorer
 
 
-def open_file_explorer():
-    system = platform.system()
-    if system == "Darwin":  # macOS
-        subprocess.run(["open", "."])
-    elif system == "Windows":
-        subprocess.run(["explorer", "."])
-    else:  # Linux and others
-        subprocess.run(["xdg-open", "."])
 
 
 def open_tabs(button_name=None):
@@ -30,8 +23,8 @@ def get_url_list(button_name=None):
     print("Current Working Directory:", os.getcwd())  # For debugging
 
     # Reason: Use absolute path based on this file's location to be robust to working directory
-    current_file_dir = Path(__file__).parent
-    filename = current_file_dir / "url_list.txt"
+    current_file_dir = Path(__file__).parent.parent.parent
+    filename = current_file_dir / "data" / "url_list.txt"
     lines = read_lines(filename)
 
     # Reason: Handle case where file read failed

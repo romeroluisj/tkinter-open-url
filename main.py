@@ -1,4 +1,4 @@
-from tkinter_open_url.tk.window import Window
+from tktools.tk.window import Window
 
 
 def main():

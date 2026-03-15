@@ -1,0 +1,6 @@
+# Keep these apps in the Dock (one per line)
+# Edit this list to customize which apps remain after pruning
+Safari
+Terminal
+Finder
+Windsurf
