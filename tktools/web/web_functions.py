@@ -9,12 +9,46 @@ from tktools.system.system_functions import open_file_explorer
 
 
 
+def _open_urls_in_new_safari_window(urls: list[str]) -> None:
+    if not urls:
+        return
+
+    script = r'''
+on run argv
+    tell application "Safari"
+        activate
+        set firstUrl to item 1 of argv
+        make new document with properties {URL:firstUrl}
+        set w to front window
+        repeat with i from 2 to (count of argv)
+            set u to item i of argv
+            tell w to make new tab at end of tabs with properties {URL:u}
+        end repeat
+    end tell
+end run
+'''
+
+    subprocess.run(
+        ["osascript", "-e", script, *urls],
+        check=True,
+        text=True,
+        capture_output=True,
+    )
+
+
 def open_tabs(button_name=None):
     if button_name == "Test":
         open_file_explorer()
         return
     
     urls = get_url_list(button_name)
+    if platform.system() == "Darwin":
+        try:
+            _open_urls_in_new_safari_window(urls)
+            return
+        except Exception as e:
+            print(f"Error opening URLs in Safari via osascript: {e}")
+
     for url in urls:
         webbrowser.open_new_tab(url)
 
