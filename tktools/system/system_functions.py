@@ -15,6 +15,18 @@ def open_file_explorer():
         subprocess.run(["xdg-open", "."])
 
 
+def open_text_file(filename):
+    """Open a text file with the system's default text editor."""
+    file_path = Path(__file__).parent.parent.parent / "data" / filename
+    system = platform.system()
+    if system == "Darwin":  # macOS
+        subprocess.run(["open", "-a", "TextEdit", file_path])
+    elif system == "Windows":
+        subprocess.run(["notepad", file_path])
+    else:  # Linux and others
+        subprocess.run(["xdg-open", file_path])
+
+
 def prune_dock(keep_file="keep_apps.txt"):
     # Resolve path from this file up to config/ folder
     keep_file_path = Path(__file__).parent.parent.parent / "config" / keep_file

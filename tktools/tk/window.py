@@ -2,7 +2,7 @@ import tkinter as tk
 from tktools.tk.button import Button
 from tktools.tk.labelframe import LabelFrame
 from tktools.web.web_functions import *
-from tktools.system.system_functions import prune_dock
+from tktools.system.system_functions import prune_dock, open_text_file
 
 
 class Window(tk.Tk):
@@ -20,6 +20,8 @@ class Window(tk.Tk):
         self.build_default_section()
         # System section (to the right of Default)
         self.build_system_section()
+        # Do section (to the right of System section)
+        self.build_do_section()
 
         # Other sections
         self.build_language_section()
@@ -40,6 +42,14 @@ class Window(tk.Tk):
         lf = LabelFrame(self, row, col, "System")
         button_00 = Button(lf, 0, 0, "Zen Dock",
                            command=lambda: prune_dock())
+
+    def build_do_section(self):
+        row, col = 0, 2  # To the right of System section
+        lf = LabelFrame(self, row, col, "Do")
+        button_00 = Button(lf, 0, 0, "Macro",
+                           command=lambda: open_text_file("macro.txt"))
+        button_01 = Button(lf, 1, 0, "Pending",
+                           command=lambda: open_text_file("pending.txt"))
 
     def build_code_section(self):
         row, col = 1, 0
