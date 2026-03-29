@@ -2,7 +2,7 @@ import tkinter as tk
 from tktools.tk.button import Button
 from tktools.tk.labelframe import LabelFrame
 from tktools.web.web_functions import *
-from tktools.system.system_functions import prune_dock, open_text_file
+from tktools.system.system_functions import prune_dock, open_text_file, open_file_explorer  
 
 
 class Window(tk.Tk):
@@ -34,14 +34,14 @@ class Window(tk.Tk):
         lf = LabelFrame(self, row, col, "Default")
         button_00 = Button(lf, 0, 0, "Default",
                            command=lambda: open_tabs(button_00.cget('text')))
-        button_01 = Button(lf, 0, 1, "Test",
-                           command=lambda: open_tabs(button_01.cget('text')))
 
     def build_system_section(self):
         row, col = 0, 1  # To the right of Default section
         lf = LabelFrame(self, row, col, "System")
         button_00 = Button(lf, 0, 0, "Zen Dock",
                            command=lambda: prune_dock())
+        button_01 = Button(lf, 1, 0, "Home dir",
+                           command=lambda: open_file_explorer())
 
     def build_do_section(self):
         row, col = 0, 2  # To the right of System section

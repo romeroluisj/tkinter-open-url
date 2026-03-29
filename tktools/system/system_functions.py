@@ -6,13 +6,14 @@ from pathlib import Path
 
 
 def open_file_explorer():
+    home = str(Path.home())
     system = platform.system()
     if system == "Darwin":  # macOS
-        subprocess.run(["open", "."])
+        subprocess.run(["open", home])
     elif system == "Windows":
-        subprocess.run(["explorer", "."])
+        subprocess.run(["explorer", home])
     else:  # Linux and others
-        subprocess.run(["xdg-open", "."])
+        subprocess.run(["xdg-open", home])
 
 
 def open_text_file(filename):

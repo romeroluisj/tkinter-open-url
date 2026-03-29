@@ -36,11 +36,7 @@ end run
     )
 
 
-def open_tabs(button_name=None):
-    if button_name == "Test":
-        open_file_explorer()
-        return
-    
+def open_tabs(button_name=None):  
     urls = get_url_list(button_name)
     if platform.system() == "Darwin":
         try:

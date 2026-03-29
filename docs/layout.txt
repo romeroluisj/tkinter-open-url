@@ -1,0 +1,20 @@
+Current zen-panel Layout
+========================
+
+Column 0    Column 1    Column 2
+Default     System      Do
+Code                    
+Financial                
+YouTube                  
+Languages                  
+
+Section Details:
+- Default: Default button
+- System: Zen Dock, Home dir buttons (vertical layout)
+- Do: Macro, Pending buttons (vertical layout)
+- Code: Code, Courses, AI Chatbots, Azure buttons
+- Financial: Accounts, Invest buttons
+- YouTube: YouTube button
+- Languages: Deutsch, Українська, Русський, Français, Italiano, Português, Español, English buttons
+
+Last updated: 2026-03-29
