@@ -89,15 +89,15 @@ class Window(tk.Tk):
         # Create dropdown
         dropdown = ttk.Combobox(lf, values=languages, state="readonly", width=15)
         dropdown.grid(row=0, column=0, padx=5, pady=5)
-        dropdown.set('Select language')  # Default placeholder
+        dropdown.set('Select')  # Default placeholder
         
         # Bind selection event
         def on_language_select(event):
             selected = dropdown.get()
-            if selected and selected != 'Select language':
+            if selected and selected != 'Select':
                 open_tabs(selected)
                 # Reset to placeholder after selection
-                dropdown.set('Select language')
+                dropdown.set('Select')
         
         dropdown.bind('<<ComboboxSelected>>', on_language_select)
 
