@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import ttk
 from tktools.tk.button import Button
 from tktools.tk.labelframe import LabelFrame
 from tktools.web.web_functions import *
@@ -24,6 +25,7 @@ class Window(tk.Tk):
         self.build_do_section()
 
         # Other sections
+        self.build_dropdown_section()
         self.build_language_section()
         self.build_code_section()
         self.build_financial_section()
@@ -36,7 +38,7 @@ class Window(tk.Tk):
                            command=lambda: open_tabs(button_00.cget('text')))
 
     def build_system_section(self):
-        row, col = 0, 1  # To the right of Default section
+        row, col = 0, 1  # To the right of Work section
         lf = LabelFrame(self, row, col, "System")
         button_00 = Button(lf, 0, 0, "Zen Dock",
                            command=lambda: prune_dock())
@@ -77,8 +79,31 @@ class Window(tk.Tk):
         button_00 = Button(lf, 0, 0, "YouTube",
                            command=lambda: open_tabs(button_00.cget('text')))
 
-    def build_language_section(self):
+    def build_dropdown_section(self):
         row, col = 4, 0
+        lf = LabelFrame(self, row, col, 'Languages')
+        
+        # Language options (same as buttons)
+        languages = ['Deutsch', 'Українська', 'Русский', 'Français', 
+                    'Italiano', 'Português', 'Español', 'English']
+        
+        # Create dropdown
+        dropdown = ttk.Combobox(lf, values=languages, state="readonly", width=15)
+        dropdown.grid(row=0, column=0, padx=5, pady=5)
+        dropdown.set('Select language')  # Default placeholder
+        
+        # Bind selection event
+        def on_language_select(event):
+            selected = dropdown.get()
+            if selected and selected != 'Select language':
+                open_tabs(selected)
+                # Reset to placeholder after selection
+                dropdown.set('Select language')
+        
+        dropdown.bind('<<ComboboxSelected>>', on_language_select)
+
+    def build_language_section(self):
+        row, col = 5, 0  # Moved from row 4 to make room for dropdown
         lf = LabelFrame(self, row, col, 'Languages')
         button_00 = Button(lf, 0, 0, 'Deutsch',
                            command=lambda: open_tabs(button_00.cget('text')))

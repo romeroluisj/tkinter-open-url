@@ -6,6 +6,7 @@ Default     System      Do
 Code                    
 Financial                
 YouTube                  
+Languages (Dropdown)      
 Languages                  
 
 Section Details:
@@ -15,6 +16,7 @@ Section Details:
 - Code: Code, Courses, AI Chatbots, Azure buttons
 - Financial: Accounts, Invest buttons
 - YouTube: YouTube button
+- Languages (Dropdown): Dropdown with Deutsch, Українська, Русский, Français, Italiano, Português, Español, English options
 - Languages: Deutsch, Українська, Русський, Français, Italiano, Português, Español, English buttons
 
 Last updated: 2026-03-29
