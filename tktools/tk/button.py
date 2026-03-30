@@ -3,8 +3,8 @@ import tkinter as tk
 
 class Button(tk.Button):
     # tk.Button's text not visible on Mac Dark Mode; other option: use ttk.Button
-    def __init__(self, frame, row=0, column=0, text=None, command=None, relief=None, bd=None):
-        super().__init__(frame, text=text, command=command, relief=relief, bd=bd)
+    def __init__(self, frame, row=0, column=0, text=None, command=None, relief=None, bd=None, width=None):
+        super().__init__(frame, text=text, command=command, relief=relief, bd=bd, width=width)
         if text is None:
             self.config(text=f"{text}_{row}{column}")
         if command is None:

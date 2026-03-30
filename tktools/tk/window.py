@@ -34,7 +34,7 @@ class Window(tk.Tk):
         row, col = 0, 0
         lf = LabelFrame(self, row, col, "Work")
         button_00 = Button(lf, 0, 0, "Fintech",
-                           command=lambda: open_tabs(button_00.cget('text')))
+                           command=lambda: open_tabs(button_00.cget('text')), width=8)
 
     def build_system_section(self):
         row, col = 0, 1  # To the right of Work section
@@ -60,7 +60,7 @@ class Window(tk.Tk):
         code_options = ['Code', 'Courses', 'AI Chatbots', 'Azure']
         
         # Create dropdown
-        dropdown = ttk.Combobox(lf, values=code_options, state="readonly", width=15)
+        dropdown = ttk.Combobox(lf, values=code_options, state="readonly", width=8)
         dropdown.grid(row=0, column=0, padx=5, pady=5)
         dropdown.set('Select')  # Default placeholder
         
@@ -78,15 +78,15 @@ class Window(tk.Tk):
         row, col = 2, 0
         lf = LabelFrame(self, row, col, "Financial")
         button_00 = Button(lf, 0, 0, "Accounts",
-                           command=lambda: open_tabs(button_00.cget('text')))
+                           command=lambda: open_tabs(button_00.cget('text')), width=8)
         button_10 = Button(lf, 1, 0, "Invest",
-                           command=lambda: open_tabs(button_10.cget('text')))
+                           command=lambda: open_tabs(button_10.cget('text')), width=8)
 
     def build_youtube_section(self):
         row, col = 3, 0
         lf = LabelFrame(self, row, col, "YouTube")
         button_00 = Button(lf, 0, 0, "YouTube",
-                           command=lambda: open_tabs(button_00.cget('text')))
+                           command=lambda: open_tabs(button_00.cget('text')), width=8)
 
     def build_dropdown_language_section(self):
         row, col = 4, 0
@@ -97,7 +97,7 @@ class Window(tk.Tk):
                     'Italiano', 'Português', 'Español', 'English']
         
         # Create dropdown
-        dropdown = ttk.Combobox(lf, values=languages, state="readonly", width=15)
+        dropdown = ttk.Combobox(lf, values=languages, state="readonly", width=8)
         dropdown.grid(row=0, column=0, padx=5, pady=5)
         dropdown.set('Select')  # Default placeholder
         
