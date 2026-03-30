@@ -25,6 +25,7 @@ class Window(tk.Tk):
         self.build_do_section()
 
         # Other sections
+        self.build_dropdown_code_section()
         self.build_dropdown_language_section()
         self.build_code_section()
         self.build_financial_section()
@@ -52,8 +53,30 @@ class Window(tk.Tk):
         button_01 = Button(lf, 1, 0, "Pending",
                            command=lambda: open_text_file("pending.txt"))
 
-    def build_code_section(self):
+    def build_dropdown_code_section(self):
         row, col = 1, 0
+        lf = LabelFrame(self, row, col, 'Code')
+        
+        # Code options (same as buttons)
+        code_options = ['Code', 'Courses', 'AI Chatbots', 'Azure']
+        
+        # Create dropdown
+        dropdown = ttk.Combobox(lf, values=code_options, state="readonly", width=15)
+        dropdown.grid(row=0, column=0, padx=5, pady=5)
+        dropdown.set('Select')  # Default placeholder
+        
+        # Bind selection event
+        def on_code_select(event):
+            selected = dropdown.get()
+            if selected and selected != 'Select':
+                open_tabs(selected)
+                # Reset to placeholder after selection
+                dropdown.set('Select')
+        
+        dropdown.bind('<<ComboboxSelected>>', on_code_select)
+
+    def build_code_section(self):
+        row, col = 2, 0  # Moved from row 1 to make room for dropdown
         lf = LabelFrame(self, row, col, "Code")
         button_00 = Button(lf, 0, 0, "Code",
                            command=lambda: open_tabs(button_00.cget('text')))

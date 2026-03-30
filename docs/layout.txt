@@ -3,6 +3,7 @@ Current zen-panel Layout
 
 Column 0    Column 1    Column 2
 Work     System      Do
+Code (Dropdown)          
 Code                    
 Financial                
 YouTube                  
@@ -13,10 +14,11 @@ Section Details:
 - Work: Fintech button
 - System: Zen Dock, Home dir buttons (vertical layout)
 - Do: Macro, Pending buttons (vertical layout)
+- Code (Dropdown): Dropdown with Code, Courses, AI Chatbots, Azure options
 - Code: Code, Courses, AI Chatbots, Azure buttons
 - Financial: Accounts, Invest buttons
 - YouTube: YouTube button
-- Languages (Dropdown): Dropdown with Deutsch, Українська, Русский, Français, Italiano, Português, Español, English options
+- Languages (Dropdown): Dropdown with Deutsch, Українська, Русський, Français, Italiano, Português, Español, English options
 - Languages: Deutsch, Українська, Русський, Français, Italiano, Português, Español, English buttons
 
-Last updated: 2026-03-29
+Last updated: 2026-03-30
