@@ -27,7 +27,6 @@ class Window(tk.Tk):
         # Other sections
         self.build_dropdown_code_section()
         self.build_dropdown_language_section()
-        self.build_code_section()
         self.build_financial_section()
         self.build_youtube_section()
 
@@ -74,18 +73,6 @@ class Window(tk.Tk):
                 dropdown.set('Select')
         
         dropdown.bind('<<ComboboxSelected>>', on_code_select)
-
-    def build_code_section(self):
-        row, col = 2, 0  # Moved from row 1 to make room for dropdown
-        lf = LabelFrame(self, row, col, "Code")
-        button_00 = Button(lf, 0, 0, "Code",
-                           command=lambda: open_tabs(button_00.cget('text')))
-        button_01 = Button(lf, 0, 1, "Courses",
-                           command=lambda: open_tabs(button_01.cget('text')))
-        button_10 = Button(lf, 1, 0, "AI Chatbots",
-                           command=lambda: open_tabs(button_10.cget('text')))
-        button_11 = Button(lf, 1, 1, "Azure",
-                           command=lambda: open_tabs(button_11.cget('text')))
 
     def build_financial_section(self):
         row, col = 2, 0
