@@ -109,3 +109,28 @@ python main.py
 ### 8.2 Zen Dock not removing some apps
 - Ensure `dockutil` is installed and discoverable.
 - Ensure macOS permissions are granted for Apple Events.
+
+---
+
+## 9. Development Standards
+
+### 9.1 Layout Documentation Updates
+
+After any UI changes to the zen-panel interface:
+
+1. **Always update** `docs/layout.txt` to reflect the current layout
+2. Include:
+   - Visual grid layout (Column 0, Column 1, Column 2)
+   - Section details with button names and positions
+   - Update "Last updated" timestamp
+3. This applies to:
+   - Adding/removing sections
+   - Moving sections
+   - Adding/removing buttons
+   - Changing button names
+   - Changing section names
+
+### 9.2 Checklist Before Commit
+- [ ] UI changes implemented
+- [ ] `docs/layout.txt` updated
+- [ ] Layout matches actual code

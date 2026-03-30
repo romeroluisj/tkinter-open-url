@@ -2,7 +2,7 @@ Current zen-panel Layout
 ========================
 
 Column 0    Column 1    Column 2
-Default     System      Do
+Work     System      Do
 Code                    
 Financial                
 YouTube                  
@@ -10,7 +10,7 @@ Languages (Dropdown)
 Languages                  
 
 Section Details:
-- Default: Default button
+- Work: Fintech button
 - System: Zen Dock, Home dir buttons (vertical layout)
 - Do: Macro, Pending buttons (vertical layout)
 - Code: Code, Courses, AI Chatbots, Azure buttons
