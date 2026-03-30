@@ -7,6 +7,7 @@ Code (Dropdown)
 Financial                
 YouTube                  
 Languages (Dropdown)      
+Browser                  
 
 Section Details:
 - Work: Fintech button
@@ -16,5 +17,6 @@ Section Details:
 - Financial: Accounts, Invest buttons
 - YouTube: YouTube button
 - Languages (Dropdown): Dropdown with Deutsch, Українська, Русський, Français, Italiano, Português, Español, English options
+- Browser: Close all button
 
 Last updated: 2026-03-30

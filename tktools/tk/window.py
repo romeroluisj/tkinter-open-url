@@ -3,7 +3,7 @@ from tkinter import ttk
 from tktools.tk.button import Button
 from tktools.tk.labelframe import LabelFrame
 from tktools.web.web_functions import *
-from tktools.system.system_functions import prune_dock, open_text_file, open_file_explorer  
+from tktools.system.system_functions import prune_dock, open_text_file, open_file_explorer, close_all_browsers  
 
 
 class Window(tk.Tk):
@@ -27,6 +27,7 @@ class Window(tk.Tk):
         # Other sections
         self.build_dropdown_code_section()
         self.build_dropdown_language_section()
+        self.build_browser_section()
         self.build_financial_section()
         self.build_youtube_section()
 
@@ -73,6 +74,35 @@ class Window(tk.Tk):
                 dropdown.set('Select')
         
         dropdown.bind('<<ComboboxSelected>>', on_code_select)
+
+    def build_dropdown_language_section(self):
+        row, col = 4, 0
+        lf = LabelFrame(self, row, col, 'Languages')
+        
+        # Language options (same as buttons)
+        languages = ['Deutsch', 'Українська', 'Русский', 'Français', 
+                    'Italiano', 'Português', 'Español', 'English']
+        
+        # Create dropdown
+        dropdown = ttk.Combobox(lf, values=languages, state="readonly", width=8)
+        dropdown.grid(row=0, column=0, padx=5, pady=5)
+        dropdown.set('Select')  # Default placeholder
+        
+        # Bind selection event
+        def on_language_select(event):
+            selected = dropdown.get()
+            if selected and selected != 'Select':
+                open_tabs(selected)
+                # Reset to placeholder after selection
+                dropdown.set('Select')
+        
+        dropdown.bind('<<ComboboxSelected>>', on_language_select)
+
+    def build_browser_section(self):
+        row, col = 5, 0
+        lf = LabelFrame(self, row, col, "Browser")
+        button_00 = Button(lf, 0, 0, "Close all",
+                           command=lambda: close_all_browsers(), width=8)
 
     def build_financial_section(self):
         row, col = 2, 0

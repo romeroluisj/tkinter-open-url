@@ -28,6 +28,31 @@ def open_text_file(filename):
         subprocess.run(["xdg-open", file_path])
 
 
+def close_all_browsers():
+    """Close all browser windows (Safari, Chrome, Edge, etc)."""
+    system = platform.system()
+    if system == "Darwin":  # macOS
+        # Close Safari
+        subprocess.run(["osascript", "-e", 'tell application "Safari" to quit'], capture_output=True)
+        # Close Chrome
+        subprocess.run(["osascript", "-e", 'tell application "Google Chrome" to quit'], capture_output=True)
+        # Close Edge
+        subprocess.run(["osascript", "-e", 'tell application "Microsoft Edge" to quit'], capture_output=True)
+        # Close Firefox
+        subprocess.run(["osascript", "-e", 'tell application "Firefox" to quit'], capture_output=True)
+    elif system == "Windows":
+        # Close browsers on Windows
+        subprocess.run(["taskkill", "/F", "/IM", "safari.exe"], capture_output=True)
+        subprocess.run(["taskkill", "/F", "/IM", "chrome.exe"], capture_output=True)
+        subprocess.run(["taskkill", "/F", "/IM", "msedge.exe"], capture_output=True)
+        subprocess.run(["taskkill", "/F", "/IM", "firefox.exe"], capture_output=True)
+    else:  # Linux and others
+        subprocess.run(["pkill", "-f", "safari"], capture_output=True)
+        subprocess.run(["pkill", "-f", "chrome"], capture_output=True)
+        subprocess.run(["pkill", "-f", "edge"], capture_output=True)
+        subprocess.run(["pkill", "-f", "firefox"], capture_output=True)
+
+
 def prune_dock(keep_file="keep_apps.txt"):
     # Resolve path from this file up to config/ folder
     keep_file_path = Path(__file__).parent.parent.parent / "config" / keep_file
