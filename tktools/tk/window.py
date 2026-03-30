@@ -31,8 +31,8 @@ class Window(tk.Tk):
 
     def build_default_section(self):
         row, col = 0, 0
-        lf = LabelFrame(self, row, col, "Default")
-        button_00 = Button(lf, 0, 0, "Default",
+        lf = LabelFrame(self, row, col, "Work")
+        button_00 = Button(lf, 0, 0, "Fintech",
                            command=lambda: open_tabs(button_00.cget('text')))
 
     def build_system_section(self):
