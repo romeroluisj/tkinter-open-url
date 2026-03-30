@@ -62,7 +62,7 @@ class Window(tk.Tk):
                            command=lambda: open_tabs("AI Chatbots"), width=8)
         
         # Code options (excluding AI Chatbots)
-        code_options = ['Code', 'Courses', 'Azure']
+        code_options = ['Git', 'Courses', 'Azure']
         
         # Create dropdown
         dropdown = ttk.Combobox(lf, values=code_options, state="readonly", width=8)
