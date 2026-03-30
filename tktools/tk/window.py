@@ -57,12 +57,16 @@ class Window(tk.Tk):
         row, col = 1, 0
         lf = LabelFrame(self, row, col, 'Code')
         
-        # Code options (same as buttons)
-        code_options = ['Code', 'Courses', 'AI Chatbots', 'Azure']
+        # AI Chatbots button above dropdown
+        button_ai = Button(lf, 0, 0, "AI Chatbots",
+                           command=lambda: open_tabs("AI Chatbots"), width=8)
+        
+        # Code options (excluding AI Chatbots)
+        code_options = ['Code', 'Courses', 'Azure']
         
         # Create dropdown
         dropdown = ttk.Combobox(lf, values=code_options, state="readonly", width=8)
-        dropdown.grid(row=0, column=0, padx=5, pady=5)
+        dropdown.grid(row=1, column=0, padx=5, pady=5)
         dropdown.set('Select')  # Default placeholder
         
         # Bind selection event

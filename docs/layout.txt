@@ -13,7 +13,7 @@ Section Details:
 - Work: Fintech button
 - System: Zen Dock, Home dir buttons (vertical layout)
 - Do: Macro, Pending buttons (vertical layout)
-- Code (Dropdown): Dropdown with Code, Courses, AI Chatbots, Azure options
+- Code (Dropdown): AI Chatbots button above dropdown with Code, Courses, Azure options
 - Financial: Accounts, Invest buttons
 - YouTube: YouTube button
 - Languages (Dropdown): Dropdown with Deutsch, Українська, Русський, Français, Italiano, Português, Español, English options
