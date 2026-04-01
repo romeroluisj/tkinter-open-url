@@ -1,0 +1,74 @@
+# macOS App Setup for zen-panel
+
+This document contains the commands to create a native macOS app bundle that allows launching zen-panel via Spotlight (Cmd+Space → "zen-panel").
+
+## Commands
+
+### 1. Create the app structure
+```bash
+mkdir -p /Applications/zen-panel.app/Contents/MacOS
+```
+
+### 2. Create the launcher script
+```bash
+cat > /Applications/zen-panel.app/Contents/MacOS/zen-panel << 'EOF'
+#!/bin/bash
+cd /Users/luisromero/Dev/python/tkinter/zen-panel && .venv/bin/python main.py
+EOF
+chmod +x /Applications/zen-panel.app/Contents/MacOS/zen-panel
+```
+
+### 3. Create the app manifest
+```bash
+cat > /Applications/zen-panel.app/Contents/Info.plist << 'EOF'
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>zen-panel</string>
+    <key>CFBundleExecutable</key>
+    <string>zen-panel</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.luisromero.zen-panel</string>
+    <key>CFBundleVersion</key>
+    <string>1.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>LSArchitecturePriority</key>
+    <array>
+        <string>arm64</string>
+    </array>
+    <key>LSMinimumSystemVersion</key>
+    <string>11.0</string>
+</dict>
+</plist>
+EOF
+```
+
+### 4. Register the app with macOS Launch Services
+```bash
+/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -f /Applications/zen-panel.app
+```
+
+### 5. Force Spotlight to index the app
+```bash
+mdimport /Applications/zen-panel.app
+```
+
+## Usage
+
+After running all 5 commands:
+1. Press **Cmd + Space**
+2. Type **zen-panel**
+3. Select the result that shows as an **Application**
+4. Press **Enter**
+
+## Notes
+
+- Creates a native macOS app bundle at `/Applications/zen-panel.app`
+- Uses the virtual environment Python interpreter
+- Runs natively on Apple Silicon (arm64) — no Rosetta needed
+- Bundle ID: `com.luisromero.zen-panel`
+- Step 4 registers the app so macOS recognizes it as a launchable application
+- Step 5 forces Spotlight to index the app immediately
