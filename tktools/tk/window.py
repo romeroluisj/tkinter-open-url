@@ -52,6 +52,8 @@ class Window(tk.Tk):
                            command=lambda: open_text_file("macro.txt"))
         button_01 = Button(lf, 1, 0, "Pending",
                            command=lambda: open_text_file("pending.txt"))
+        button_02 = Button(lf, 2, 0, "Mental",
+                           command=lambda: open_text_file("mental.txt"))
 
     def build_dropdown_code_section(self):
         row, col = 1, 0

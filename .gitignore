@@ -179,5 +179,6 @@ pyrightconfig.json
 # User data files (local only)
 data/macro.txt
 data/pending.txt
+data/mental.txt
 
 # End of https://www.toptal.com/developers/gitignore/api/python
