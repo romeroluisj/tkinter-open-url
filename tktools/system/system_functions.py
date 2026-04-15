@@ -91,6 +91,7 @@ def quit_all_apps(keep_file="keep_apps.txt"):
                 subprocess.run(["osascript", "-e", quit_script], timeout=3, capture_output=True, text=True)
             except subprocess.TimeoutExpired:
                 pass
+    subprocess.run(["osascript", "-e", 'tell application "Finder" to close every window'], capture_output=True, text=True)
 
 
 def prune_dock(keep_file="keep_apps.txt"):
