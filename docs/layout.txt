@@ -1,11 +1,11 @@
 Current zen-panel Layout
 ========================
 
-Column 0    Column 1    Column 2
-Work     System      Do
-Code (Dropdown)          
+Column 0              Column 1    Column 2
+Code (Dropdown)       System      Do
 Financial                
 YouTube                  
+Work                     
 Languages (Dropdown)      
 Browser                  
 

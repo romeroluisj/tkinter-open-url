@@ -32,7 +32,7 @@ class Window(tk.Tk):
         self.build_youtube_section()
 
     def build_default_section(self):
-        row, col = 0, 0
+        row, col = 3, 0
         lf = LabelFrame(self, row, col, "Work")
         button_00 = Button(lf, 0, 0, "Fintech",
                            command=lambda: open_tabs(button_00.cget('text')), width=8)
@@ -56,7 +56,7 @@ class Window(tk.Tk):
                            command=lambda: open_text_file("mental.txt"))
 
     def build_dropdown_code_section(self):
-        row, col = 1, 0
+        row, col = 0, 0
         lf = LabelFrame(self, row, col, 'Code')
         
         # AI Chatbots button above dropdown
@@ -111,7 +111,7 @@ class Window(tk.Tk):
                            command=lambda: close_all_browsers(), width=8)
 
     def build_financial_section(self):
-        row, col = 2, 0
+        row, col = 1, 0
         lf = LabelFrame(self, row, col, "Financial")
         button_00 = Button(lf, 0, 0, "Accounts",
                            command=lambda: open_tabs(button_00.cget('text')), width=8)
@@ -119,33 +119,10 @@ class Window(tk.Tk):
                            command=lambda: open_tabs(button_10.cget('text')), width=8)
 
     def build_youtube_section(self):
-        row, col = 3, 0
+        row, col = 2, 0
         lf = LabelFrame(self, row, col, "YouTube")
         button_00 = Button(lf, 0, 0, "YouTube",
                            command=lambda: open_tabs(button_00.cget('text')), width=8)
-
-    def build_dropdown_language_section(self):
-        row, col = 4, 0
-        lf = LabelFrame(self, row, col, 'Languages')
-        
-        # Language options (same as buttons)
-        languages = ['Deutsch', 'Українська', 'Русский', 'Français', 
-                    'Italiano', 'Português', 'Español', 'English']
-        
-        # Create dropdown
-        dropdown = ttk.Combobox(lf, values=languages, state="readonly", width=8)
-        dropdown.grid(row=0, column=0, padx=5, pady=5)
-        dropdown.set('Select')  # Default placeholder
-        
-        # Bind selection event
-        def on_language_select(event):
-            selected = dropdown.get()
-            if selected and selected != 'Select':
-                open_tabs(selected)
-                # Reset to placeholder after selection
-                dropdown.set('Select')
-        
-        dropdown.bind('<<ComboboxSelected>>', on_language_select)
 
     def start(self):
         self.mainloop()
