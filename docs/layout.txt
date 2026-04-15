@@ -11,7 +11,7 @@ Browser
 
 Section Details:
 - Work: Fintech button
-- System: Zen Dock, Home dir buttons (vertical layout)
+- System: Zen Dock, Quit apps buttons (vertical layout)
 - Do: Macro, Pending buttons (vertical layout)
 - Code (Dropdown): AI Chatbots button above dropdown with Git, Courses, Azure options
 - Financial: Accounts, Invest buttons

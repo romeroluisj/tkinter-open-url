@@ -1,7 +1,10 @@
-# Keep these apps in the Dock (one per line)
-# Edit this list to customize which apps remain after pruning
+# [dock] - Apps to keep in dock (used by Zen Dock button)
 Finder
 Safari
 Terminal
 Windsurf
+zen-panel
+
+# [quit] - Apps to keep running (used by Quit apps button)
+Safari
 zen-panel

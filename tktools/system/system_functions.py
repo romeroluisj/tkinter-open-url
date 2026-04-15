@@ -53,11 +53,51 @@ def close_all_browsers():
         subprocess.run(["pkill", "-f", "firefox"], capture_output=True)
 
 
+def _read_keep_section(section, keep_file="keep_apps.txt"):
+    """Read app names from a [section] in keep_apps.txt."""
+    keep_file_path = Path(__file__).parent.parent.parent / "config" / keep_file
+    apps = set()
+    in_section = False
+    for line in keep_file_path.read_text().splitlines():
+        stripped = line.strip()
+        if stripped.startswith(f"# [{section}]"):
+            in_section = True
+            continue
+        if stripped.startswith("# [") and in_section:
+            break
+        if in_section and stripped and not stripped.startswith('#'):
+            apps.add(stripped)
+    return apps
+
+
+def quit_all_apps(keep_file="keep_apps.txt"):
+    """Quit all running apps except those listed in [quit] section of keep_apps.txt."""
+    keep = _read_keep_section("quit", keep_file)
+    keep.add("Finder")
+    script = '''
+    tell application "System Events"
+        set appList to name of every application process whose visible is true
+    end tell
+    return appList
+    '''
+    result = subprocess.run(["osascript", "-e", script], capture_output=True, text=True)
+    if not result.stdout:
+        return
+    app_names = [name.strip() for name in result.stdout.strip().split(", ")]
+    for app in app_names:
+        if app not in keep:
+            quit_script = f'tell application "{app}" to quit'
+            try:
+                subprocess.run(["osascript", "-e", quit_script], timeout=3, capture_output=True, text=True)
+            except subprocess.TimeoutExpired:
+                pass
+
+
 def prune_dock(keep_file="keep_apps.txt"):
     # Resolve path from this file up to config/ folder
-    keep_file_path = Path(__file__).parent.parent.parent / "config" / keep_file
-    keep = {line.strip() for line in keep_file_path.read_text().splitlines() if line.strip() and not line.strip().startswith('#')}
+    keep = _read_keep_section("dock", keep_file)
 
+    keep_file_path = Path(__file__).parent.parent.parent / "config" / keep_file
     dockutil_path = shutil.which("dockutil")
     if not dockutil_path:
         for candidate in ("/opt/homebrew/bin/dockutil", "/usr/local/bin/dockutil"):

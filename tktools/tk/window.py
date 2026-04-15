@@ -3,7 +3,7 @@ from tkinter import ttk
 from tktools.tk.button import Button
 from tktools.tk.labelframe import LabelFrame
 from tktools.web.web_functions import *
-from tktools.system.system_functions import prune_dock, open_text_file, open_file_explorer, close_all_browsers  
+from tktools.system.system_functions import prune_dock, open_text_file, open_file_explorer, close_all_browsers, quit_all_apps  
 
 
 class Window(tk.Tk):
@@ -42,8 +42,8 @@ class Window(tk.Tk):
         lf = LabelFrame(self, row, col, "System")
         button_00 = Button(lf, 0, 0, "Zen Dock",
                            command=lambda: prune_dock())
-        button_01 = Button(lf, 1, 0, "Home dir",
-                           command=lambda: open_file_explorer())
+        button_01 = Button(lf, 1, 0, "Quit apps",
+                           command=lambda: quit_all_apps())
 
     def build_do_section(self):
         row, col = 0, 2  # To the right of System section
