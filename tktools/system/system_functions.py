@@ -5,15 +5,15 @@ import time
 from pathlib import Path
 
 
-def open_file_explorer():
-    home = str(Path.home())
+def open_file_explorer(path=None):
+    target = str(path) if path else str(Path.home())
     system = platform.system()
     if system == "Darwin":  # macOS
-        subprocess.run(["open", home])
+        subprocess.run(["open", target])
     elif system == "Windows":
-        subprocess.run(["explorer", home])
+        subprocess.run(["explorer", target])
     else:  # Linux and others
-        subprocess.run(["xdg-open", home])
+        subprocess.run(["xdg-open", target])
 
 
 def open_text_file(filename):

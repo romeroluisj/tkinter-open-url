@@ -99,6 +99,7 @@ class Window(tk.Tk):
             selected = dropdown.get()
             if selected and selected != 'Select':
                 open_tabs(selected)
+                open_file_explorer(f"/Users/luisromero/Documents/ling/{selected.lower()}")
                 # Reset to placeholder after selection
                 dropdown.set('Select')
         
